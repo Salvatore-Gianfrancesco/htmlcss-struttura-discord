@@ -232,4 +232,31 @@ header .col-3:last-of-type{
     border: 1px dashed black;
 }
 
+.footer_end{
+    height: 50px;
+    background-color: var(--ds-footer-background);
+    border-top: 1px solid white;
+}
+
+.footer_end .container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer_end > .container > div{
+    background-color: var(--ds-footer-end);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .registrati{
+    width: 50px;
+    height: 50%;
+    background-color: var(--ds-main-content-start);
+    border: 1px dashed black;
+}
+
 /* /footer */
