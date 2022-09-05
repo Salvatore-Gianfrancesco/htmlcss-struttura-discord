@@ -1,0 +1,270 @@
+:root{
+    --ds-header-background: #255ee9;
+
+    --ds-header-blocks: #dba420;
+    --ds-main-background-start: #01008a;
+    --ds-main-background-1: #ffffff;
+    --ds-main-background-2: #d3d2d2;
+    --ds-main-content-start: #ef82ef;
+    --ds-main-content-image: #1f90fe;
+    --ds-main-content-text: #ffc1ca;
+    --ds-main-content-end: #238b23;
+    --ds-footer-background: #21130d;
+    --ds-footer-left: #f18081;
+    --ds-footer-right: #20b3ab;
+    --ds-footer-end: #7efed4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+[class^="col-"]{
+    padding: 0 1rem;
+}
+
+.col-1{
+    width: calc((100% /12) * 1);
+}
+
+.col-2{
+    width: calc((100% /12) * 2);
+}
+
+.col-3{
+    width: calc((100% /12) * 3);
+}
+
+.col-4{
+    width: calc((100% /12) * 4);
+}
+
+.col-5{
+    width: calc((100% /12) * 5);
+}
+
+.col-6{
+    width: calc((100% /12) * 6);
+}
+
+.col-7{
+    width: calc((100% /12) * 7);
+}
+
+.col-8{
+    width: calc((100% /12) * 8);
+}
+
+.col-9{
+    width: calc((100% /12) * 9);
+}
+
+.col-10{
+    width: calc((100% /12) * 10);
+}
+
+.col-11{
+    width: calc((100% /12) * 11);
+}
+
+.col-12{
+    width: calc((100% /12) * 12);
+}
+
+/* header */
+
+header{
+    background-color: var(--ds-header-background);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header [class^="col-"]{
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+header .row{
+    align-items: center;
+}
+
+header .col-9{
+    justify-content: center;
+}
+
+header .col-3:last-of-type{
+    justify-content: flex-end;
+}
+
+header img{
+    height: 1.5rem;
+}
+
+header a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+header a:hover,
+header button:hover{
+    text-decoration: underline;
+}
+
+header button{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+/* /header */
+
+/* main */
+
+.main_start{
+    height: 300px;
+    background-color: var(--ds-main-background-start);
+}
+
+.main_start .container,
+.main_end .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_start > .container > div{
+    height: 80%;
+    width: 80%;
+    background-color: var(--ds-main-content-start);
+    border: 1px dashed black;
+}
+
+.main_section_1,
+.main_section_2{
+    height: 350px;
+}
+
+.main_section_1{
+    background-color: var(--ds-main-background-1);
+}
+
+.main_section_1 .container,
+.main_section_2 .container{
+    display: flex;
+    align-items: center;
+}
+
+.main_section_1 .row,
+.main_section_2 .row{
+    height: 80%;
+    width: 100%;
+}
+
+.main_section_1 .col-7,
+.main_section_2 .col-7{
+    background-color: var(--ds-main-content-image);
+    border: 1px dashed black;
+}
+
+.main_section_1 .col-5,
+.main_section_2 .col-5{
+    background-color: var(--ds-main-content-text);
+    border: 1px dashed black;
+}
+
+.main_section_2{
+    background-color: var(--ds-main-background-2);
+}
+
+.main_end{
+    height: 600px;
+    background-color: var(--ds-main-background-2);
+}
+
+.main_end > .container > div{
+    height: 80%;
+    width: 100%;
+    background-color: var(--ds-main-content-end);
+    border: 1px dashed black;
+}
+
+/* /main */
+
+/* footer */
+
+footer{
+    background-color: var(--ds-footer-background);
+}
+
+.footer_link{
+    height: 350px;
+}
+
+.footer_link .container{
+    display: flex;
+    align-items: center;
+}
+
+.footer_link .row{
+    height: 80%;
+    width: 100%;
+}
+
+.footer_link .col-4{
+    background-color: var(--ds-footer-left);
+    border: 1px dashed black;
+}
+
+.footer_link .col-2{
+    background-color: var(--ds-footer-right);
+    border: 1px dashed black;
+}
+
+.footer_end{
+    height: 50px;
+    border-top: 1px solid white;
+}
+
+.footer_end .container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer_end > .container > div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ds-footer-end);
+}
+
+.logo,
+.registrati{
+    width: 50px;
+    height: 50%;
+    background-color: var(--ds-main-content-start);
+    border: 1px dashed black;
+}
+
+/* /footer */
+
+.container{
+    
+}
