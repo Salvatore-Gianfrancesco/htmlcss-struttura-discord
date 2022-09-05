@@ -21,10 +21,10 @@
 }
 
 .container{
+    height: 100%;
     width: 70%;
     max-width: 1200px;
     margin: auto;
-    height: 100%;
 }
 
 .row{
@@ -91,11 +91,11 @@ header{
 }
 
 header [class^="col-"]{
-    display: flex;
     height: 80%;
+    display: flex;
+    align-items: center;
     background-color: var(--ds-header-blocks);
     border: 1px dashed black;
-    align-items: center;
 }
 
 header .row{
@@ -120,9 +120,9 @@ header .col-3:last-of-type{
     background-color: var(--ds-main-background-start);
 }
 
-.main_start .container{
+.main_start .container,
+.main_end .container{
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -134,66 +134,46 @@ header .col-3:last-of-type{
     border: 1px dashed black;
 }
 
-.main_section_1{
+.main_section_1,
+.main_section_2{
     height: 350px;
+}
+
+.main_section_1{
     background-color: var(--ds-main-background-1);
 }
 
-.main_section_1 .container{
-    display: flex;
-    align-items: center;
-}
-
-.main_section_1 .row{
-    height: 80%;
-    width: 100%;
-}
-
-.main_section_1 .col-7{
-    background-color: var(--ds-main-content-image);
-    border: 1px dashed black;
-}
-
-.main_section_1 .col-5{
-    background-color: var(--ds-main-content-text);
-    border: 1px dashed black;
-}
-
-.main_section_2{
-    height: 350px;
-    background-color: var(--ds-main-background-2);
-}
-
+.main_section_1 .container,
 .main_section_2 .container{
     display: flex;
     align-items: center;
 }
 
+.main_section_1 .row,
 .main_section_2 .row{
     height: 80%;
     width: 100%;
 }
 
+.main_section_1 .col-7,
 .main_section_2 .col-7{
     background-color: var(--ds-main-content-image);
     border: 1px dashed black;
 }
 
+.main_section_1 .col-5,
 .main_section_2 .col-5{
     background-color: var(--ds-main-content-text);
     border: 1px dashed black;
 }
 
-.main_end{
-    height: 600px;
+.main_section_2{
     background-color: var(--ds-main-background-2);
 }
 
-.main_end .container{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.main_end{
+    height: 600px;
+    background-color: var(--ds-main-background-2);
 }
 
 .main_end > .container > div{
@@ -207,9 +187,12 @@ header .col-3:last-of-type{
 
 /* footer */
 
+footer{
+    background-color: var(--ds-footer-background);
+}
+
 .footer_link{
     height: 350px;
-    background-color: var(--ds-footer-background);
 }
 
 .footer_link .container{
@@ -234,7 +217,6 @@ header .col-3:last-of-type{
 
 .footer_end{
     height: 50px;
-    background-color: var(--ds-footer-background);
     border-top: 1px solid white;
 }
 
@@ -244,12 +226,12 @@ header .col-3:last-of-type{
 }
 
 .footer_end > .container > div{
-    background-color: var(--ds-footer-end);
     height: 80%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--ds-footer-end);
 }
 
 .logo, .registrati{
