@@ -184,4 +184,23 @@ header .col-3:last-of-type{
     border: 1px dashed black;
 }
 
+.main_end{
+    height: 600px;
+    background-color: var(--ds-main-background-2);
+}
+
+.main_end .container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_end > .container > div{
+    height: 80%;
+    width: 100%;
+    background-color: var(--ds-main-content-end);
+    border: 1px dashed black;
+}
+
 /* /main */
