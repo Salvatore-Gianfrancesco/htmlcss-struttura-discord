@@ -134,4 +134,54 @@ header .col-3:last-of-type{
     border: 1px dashed black;
 }
 
+.main_section_1{
+    height: 350px;
+    background-color: var(--ds-main-background-1);
+}
+
+.main_section_1 .container{
+    display: flex;
+    align-items: center;
+}
+
+.main_section_1 .row{
+    height: 80%;
+    width: 100%;
+}
+
+.main_section_1 .col-7{
+    background-color: var(--ds-main-content-image);
+    border: 1px dashed black;
+}
+
+.main_section_1 .col-5{
+    background-color: var(--ds-main-content-text);
+    border: 1px dashed black;
+}
+
+.main_section_2{
+    height: 350px;
+    background-color: var(--ds-main-background-2);
+}
+
+.main_section_2 .container{
+    display: flex;
+    align-items: center;
+}
+
+.main_section_2 .row{
+    height: 80%;
+    width: 100%;
+}
+
+.main_section_2 .col-7{
+    background-color: var(--ds-main-content-image);
+    border: 1px dashed black;
+}
+
+.main_section_2 .col-5{
+    background-color: var(--ds-main-content-text);
+    border: 1px dashed black;
+}
+
 /* /main */
