@@ -1,8 +1,9 @@
 :root{
     --ds-header-background: #255ee9;
-    --ds-footer-background: #21130d;
+    --ds-footer-background: #22262a;
     --ds-main-background-1: #ffffff;
     --ds-main-background-2: #d3d2d2;
+    --ds-discord-color: #7389db;
 
     --ds-header-blocks: #dba420;
     --ds-main-background-start: #01008a;
@@ -208,21 +209,28 @@ h2{
 }
 
 .main_end{
-    height: 600px;
     background-color: var(--ds-main-background-2);
+    padding: 2rem 0rem;
 }
 
 .main_end .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.main_end > .container > div{
-    height: 80%;
-    width: 100%;
-    background-color: var(--ds-main-content-end);
-    border: 1px dashed black;
+.main_end p{
+    padding: 1rem 0rem;
+}
+
+h3{
+    background-image: url("../img/stars.svg");
+    background-size: cover;
+    background-repeat: round;
+    padding: 2rem 0rem;
+}
+
+.main_end button{
+    background-color: var(--ds-discord-color);
+    color: white;
 }
 
 /* /main */
