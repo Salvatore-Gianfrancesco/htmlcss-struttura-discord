@@ -8,7 +8,7 @@
     --ds-main-content-image: #1f90fe;
     --ds-main-content-text: #ffc1ca;
     --ds-main-content-end: #238b23;
-    --ds-footer-background: #238b23;
+    --ds-footer-background: #21130d;
     --ds-footer-left: #f18081;
     --ds-footer-right: #20b3ab;
     --ds-footer-end: #7efed4;
@@ -92,7 +92,7 @@ header{
 
 header [class^="col-"]{
     display: flex;
-    height: 30px;
+    height: 80%;
     background-color: var(--ds-header-blocks);
     border: 1px dashed black;
     align-items: center;
@@ -204,3 +204,32 @@ header .col-3:last-of-type{
 }
 
 /* /main */
+
+/* footer */
+
+.footer_link{
+    height: 350px;
+    background-color: var(--ds-footer-background);
+}
+
+.footer_link .container{
+    display: flex;
+    align-items: center;
+}
+
+.footer_link .row{
+    height: 80%;
+    width: 100%;
+}
+
+.footer_link .col-4{
+    background-color: var(--ds-footer-left);
+    border: 1px dashed black;
+}
+
+.footer_link .col-2{
+    background-color: var(--ds-footer-right);
+    border: 1px dashed black;
+}
+
+/* /footer */
