@@ -115,7 +115,7 @@ header .col-3:last-of-type{
     justify-content: flex-end;
 }
 
-header img{
+.logo{
     height: 1.5rem;
 }
 
@@ -221,7 +221,7 @@ h2{
     padding: 1rem 0rem;
 }
 
-h3{
+.main_end h3{
     background-image: url("../img/stars.svg");
     background-size: cover;
     background-repeat: round;
@@ -239,57 +239,62 @@ h3{
 
 footer{
     background-color: var(--ds-footer-background);
+    color: white;
 }
 
 .footer_link{
-    height: 350px;
+    padding: 2rem 0rem;
 }
 
-.footer_link .container{
-    display: flex;
-    align-items: center;
+footer h3{
+    color: var(--ds-discord-color);
 }
 
-.footer_link .row{
-    height: 80%;
-    width: 100%;
+footer img{
+    height: 0.8rem;
 }
 
-.footer_link .col-4{
-    background-color: var(--ds-footer-left);
-    border: 1px dashed black;
+.text_footer{
+    padding: 0.5rem 0rem;
 }
 
-.footer_link .col-2{
-    background-color: var(--ds-footer-right);
-    border: 1px dashed black;
+.social{
+    color: white;
+}
+
+.social img{
+    margin: 0rem 0.2rem;
+}
+
+h4{
+    color: var(--ds-discord-color);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.2rem 0rem;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 .footer_end{
-    height: 50px;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--ds-discord-color);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .footer_end .container{
     display: flex;
-    align-items: flex-end;
-}
-
-.footer_end > .container > div{
-    height: 80%;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--ds-footer-end);
 }
 
-.logo,
-.registrati{
-    width: 50px;
-    height: 50%;
-    background-color: var(--ds-main-content-start);
-    border: 1px dashed black;
+.footer_end button{
+    background-color: var(--ds-discord-color);
+    color: white;
 }
 
 /* /footer */
